@@ -15,6 +15,7 @@ import tokens
 # Инициализация бота
 my_bot = telebot.TeleBot(tokens.bot, threaded=True)
 my_bot_name = '@' + my_bot.get_me().username
+print("Bot name:", my_bot_name)
 
 global_lock = threading.Lock()  # TODO: bad, temporary
 
